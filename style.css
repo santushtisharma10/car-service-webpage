@@ -1,38 +1,65 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html, body{
-
+    
     height: 100%;
     width: 100%;
 }
-img {
-
-  width: 100%;
-  margin: 0;
+nav{
+  background-color: black;
 }
-h5 {
+/*
+blue*/
 
-    color: rgb(245, 161, 6);
-    font-size: 30px;
-    padding:10px 20px;
-        
+h5 {
+  font-size: 25px;
+  color: rgb(47, 47, 88);
+}
+
+/* red*/
+/*
+h5{
+  color: rgb(102, 17, 17);
+  font-size: 25px;
+}
+*/
+/*yellow*/
+/*
+h5{
+
+  font-size: 25px;
+  color: rgb(223, 158, 17);
+}
+*/
+.inner {
+
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-70%, -30%);
+}
+img {
+  width: 100%;
+}
+.nav-item {
+   
+  padding: 10px;
+}
+
+
+.my-4{
+
+  width: 400px;
+  right: 100%;
+  transform: translateX(100%);
 }
 .jumbotron .jumbotron-fluid{
 
     height: 60px;
     margin: 0;
-}
-
-#outer {
-    width: 100%;
-    height: 600px;
-    background-image: url("im/car7.PNG");
-    margin: 0!important;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 figure {
@@ -100,17 +127,18 @@ figure {
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
-    color: black;
+    color : #bbb;
+    background-color: black;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: rgb(144, 176, 207);
-    color: black;
+    color :whitesmoke;
+    background-color: black;
     transform: rotateY(180deg);
   }
   footer{
-    color: rgb(245, 161, 6);
+    color: white;
     background-color: black;
   }
+  
