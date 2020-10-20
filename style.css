@@ -1,3 +1,50 @@
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.top .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .top svg {
+      width: calc(136% + 1.3px);
+      height: 86px;
+  }
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.bottom svg {
+  position: relative;
+  display: block;
+  width: calc(103% + 1.3px);
+  height: 46px;
+}
+
+.bottom .shape-fill {
+  fill: #FFFFFF;
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,38 +55,25 @@ html, body{
     height: 100%;
     width: 100%;
 }
-nav{
-  background-color: black;
-}
 /*
 blue*/
 
 h5 {
   font-size: 25px;
-  color: rgb(47, 47, 88);
+  color: rgb(40, 40, 218);
 }
 
-/* red*/
-/*
-h5{
-  color: rgb(102, 17, 17);
-  font-size: 25px;
-}
-*/
-/*yellow*/
-/*
-h5{
 
-  font-size: 25px;
-  color: rgb(223, 158, 17);
-}
-*/
 .inner {
-
+ 
   position: absolute;
   top: 70%;
   left: 30%;
   transform: translate(-70%, -30%);
+}
+.row.padding.image {
+
+  background: radial-gradient(circle at 250% 25%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, red 50%, red 100%);
 }
 img {
   width: 100%;
